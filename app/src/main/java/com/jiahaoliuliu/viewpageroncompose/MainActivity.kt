@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.jiahaoliuliu.viewpageroncompose.ui.theme.ViewPagerOnComposeTheme
 import com.jiahaoliuliu.viewpageroncompose.uicomponents.HorizontalViewPager
+import com.jiahaoliuliu.viewpageroncompose.uicomponents.HorizontalViewPagerWithIndicator
 import com.jiahaoliuliu.viewpageroncompose.uicomponents.VerticalViewPager
 
 class MainActivity : ComponentActivity() {
@@ -24,8 +25,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             ViewPagerOnComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    val modifier = Modifier.padding(innerPadding)
                     //HorizontalViewPager(Modifier.padding(innerPadding))
-                    VerticalViewPager(Modifier.padding(innerPadding))
+//                    VerticalViewPager(Modifier.padding(innerPadding))
+                    HorizontalViewPagerWithIndicator(modifier = modifier)
                 }
             }
         }
