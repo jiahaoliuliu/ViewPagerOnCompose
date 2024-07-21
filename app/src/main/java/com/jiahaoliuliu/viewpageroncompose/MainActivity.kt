@@ -8,15 +8,9 @@ import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import com.jiahaoliuliu.viewpageroncompose.ui.theme.ViewPagerOnComposeTheme
-import com.jiahaoliuliu.viewpageroncompose.uicomponents.HorizontalViewPager
-import com.jiahaoliuliu.viewpageroncompose.uicomponents.HorizontalViewPagerWithIndicator
 import com.jiahaoliuliu.viewpageroncompose.uicomponents.HorizontalViewPagerWithMoreSnapDistance
-import com.jiahaoliuliu.viewpageroncompose.uicomponents.VerticalViewPager
 
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalFoundationApi::class)
@@ -31,6 +25,7 @@ class MainActivity : ComponentActivity() {
 //                    VerticalViewPager(Modifier.padding(innerPadding))
 //                    HorizontalViewPagerWithIndicator(modifier = modifier)
                     HorizontalViewPagerWithMoreSnapDistance(modifier = modifier)
+//                    HorizontalViewPagerWithScrollButton(modifier = modifier)
                 }
             }
         }
